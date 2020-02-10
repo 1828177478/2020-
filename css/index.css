@@ -1,0 +1,98 @@
+.section-1 {
+	/* 图片能够覆盖的区域 用图片覆盖 图片覆盖不到的区域用背景颜色覆盖 */
+	background: #ffeedd url(../images/waste-bg.png) no-repeat center center; 	
+	 /* background: #f6f6f6 url(../images/wasteBasket.jpg) no-repeat center center/310px 310px; 	 */
+}
+@keyframes rubbishUp {
+	0%   {background:#000000; bottom:100px;}
+	50%  {background:#000000; height:115px;bottom:100px;}
+	100%  {background:#000000; height:130px;bottom:100px;}
+}
+.section-1 .waste-e1{
+	position:absolute;
+	left:50%;
+	margin-left:-300px;
+	margin-top:60px;
+	animation: second 10s infinite alternate;
+}
+@keyframes second {
+    0% {
+        transform: translateX(-300px);
+    }
+    100% {
+         transform: translateX(-100px);
+    }
+}
+.section-1 .wasteBasket{
+	width:200px;
+	bottom:97px;
+	position:absolute;
+	left:45%;
+	transform: translateX(-50%);
+}
+.rubbish {
+	width:96px;
+	height:0px;
+	position: absolute;
+	left: 45%;
+	margin-left: -48px;
+	bottom:100px;
+	background: #000000;
+	animation: rubbishUp 3s linear infinite;  
+}
+/* 第二屏 */
+.section-2 {
+	/* 图片能够覆盖的区域 用图片覆盖 图片覆盖不到的区域用背景颜色覆盖 */
+	 background: #f6f6f6 url(../images/watch2.jpg) no-repeat center bottom; 	
+}
+.section-2 .watchFont {
+	width:260px;
+	opacity:0;
+	position:absolute;
+	left:50%;
+	transform: translateX(-70%);
+}
+.section-2 .watchRoute {
+	height:0;
+	position:absolute;
+	right:50%;
+	margin-right:27px;
+	bottom:374px;
+	transition: height 1.4s 1s;
+}
+/* 第三屏 */
+.section-3 {
+	/* 图片能够覆盖的区域 用图片覆盖 图片覆盖不到的区域用背景颜色覆盖 */
+	 background: #85D9ED url(../images/section3-bg.png) no-repeat -200px bottom; 	
+}
+.section-3 .section3-cart{
+	position:absolute;
+	left:366px;
+	bottom:17px;
+	z-index:2;
+}
+.section-3 .section3-waste{
+	width:100px;
+	position:absolute;
+	right:100px;
+	bottom:117px;
+
+}
+.section-3 .section3-font{
+	width:120px;
+	position:absolute;
+	left:40%;
+	transform: translateX(-80%);
+	bottom:300px;
+	opacity:0;
+
+}
+.section-3 .box{
+	width:100%;
+	height:110px;
+	position:absolute;
+	bottom:0;
+	right:0;
+	background:#565656;
+	
+}
